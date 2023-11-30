@@ -47,13 +47,6 @@ class Game {
             }
         }
 
-        /* da testare
-        if (row == -1) { //  || col == -1
-            System.out.println("Numero non trovato!");
-            return;
-        }
-        */
-
         if ((Math.abs(row - emptyRow) == 1 && col == emptyCol) ||
                 (Math.abs(col - emptyCol) == 1 && row == emptyRow)) {
             board[emptyRow][emptyCol] = board[row][col];

@@ -16,12 +16,8 @@ public class Main {
 
         int difficulty = scanner.nextInt();
         Game game = new Game();
-        avviaGioco(difficulty, game);
-    }
-
-    private static void avviaGioco(int difficulty, Game game) {
-        Scanner scanner = new Scanner(System.in);
         Print print = new Print(game);
+
         game.riceviDifficolta(difficulty);
         while (!game.giocoFinito()) {
             print.stampaBoard();
